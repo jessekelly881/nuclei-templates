@@ -1,0 +1,6 @@
+id: id
+info:
+  severity: info
+  name: Call at 9pm
+  description: Test template for call
+  author: Sullo
