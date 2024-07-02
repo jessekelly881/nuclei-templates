@@ -1,23 +1,23 @@
-id: wordpress-meta-box
+id: wordpress-chaty
 
 info:
-  name: Meta Box – WordPress Custom Fields Framework Detection
+  name: Floating Chat Widget' Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, Email, SMS, Call Button – Chaty Detection
   author: ricardomaia
   severity: info
   reference:
-    - https://wordpress.org/plugins/meta-box/
+    - https://wordpress.org/plugins/chaty/
   metadata:
-    plugin_namespace: meta-box
-    wpscan: https://wpscan.com/plugin/meta-box
+    plugin_namespace: chaty
+    wpscan: https://wpscan.com/plugin/chaty
   tags: tech,wordpress,wp-plugin,top-200
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/wp-content/plugins/meta-box/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/chaty/readme.txt"
 
     payloads:
-      last_version: helpers/wordpress/plugins/meta-box.txt
+      last_version: helpers/wordpress/plugins/chaty.txt
 
     extractors:
       - type: regex
