@@ -1,23 +1,23 @@
-id: wordpress-updraftplus
+id: wordpress-unlimited-elements-for-elementor
 
 info:
-  name: UpdraftPlus' WP Backup & Migration Plugin Detection
+  name: Unlimited Elements For Elementor (Free Widgets, Addons, Templates) Detection
   author: ricardomaia
   severity: info
   reference:
-    - https://wordpress.org/plugins/updraftplus/
+    - https://wordpress.org/plugins/unlimited-elements-for-elementor/
   metadata:
-    plugin_namespace: updraftplus
-    wpscan: https://wpscan.com/plugin/updraftplus
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+    plugin_namespace: unlimited-elements-for-elementor
+    wpscan: https://wpscan.com/plugin/unlimited-elements-for-elementor
+  tags: tech,wordpress,wp-plugin,top-200
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/wp-content/plugins/updraftplus/readme.txt"
+      - "{{BaseURL}}/wp-content/plugins/unlimited-elements-for-elementor/readme.txt"
 
     payloads:
-      last_version: helpers/wordpress/plugins/updraftplus.txt
+      last_version: helpers/wordpress/plugins/unlimited-elements-for-elementor.txt
 
     extractors:
       - type: regex
@@ -46,4 +46,3 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100ab0dd0b74d9aafff05a455f26a2ebae7daabf21fa6ff0fb2d83dc0ec68c8c057022100c4c076bff0a6fcb708f3c47e5852e224b896b75ee2bd25d2049a060b21df7b0b:922c64590222798bb761d5b6d8e72950
