@@ -45,3 +45,4 @@ http:
         words:
           - "openremote"
         case-insensitive: true
+# digest: 490a00463044022000a612f400d9c945ab109f77448a0f385a15620e1c95552dd367cc0a9e8daebd022050c7ff7242b9caead2a903c5b3097b8f474ef57de4d15e3fcfac1f5b804e4187:922c64590222798bb761d5b6d8e72950
