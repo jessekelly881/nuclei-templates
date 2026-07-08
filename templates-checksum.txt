@@ -5996,6 +5996,7 @@ http/cves/2026/CVE-2026-1306.yaml:35fb74cefb88a03d0e2747ca9acf0e1ecc612310
 http/cves/2026/CVE-2026-1314.yaml:1146c9c2e1db20f932e7722dda5eaefaaa4d649a
 http/cves/2026/CVE-2026-1357.yaml:ed2ce0aacd276a409f93384afaa0a10441bbec64
 http/cves/2026/CVE-2026-1368.yaml:ecfed4318c720035961b23f9e5974e1d108552d3
+http/cves/2026/CVE-2026-13731.yaml:f996b5e51a6a9dd349da0bad8ff39a6574997cf8
 http/cves/2026/CVE-2026-1405.yaml:850ab00e1576b49f619e774f96a943fc0862c263
 http/cves/2026/CVE-2026-1492.yaml:b6b8168c5017e2e15001137a9b5748f9d03be620
 http/cves/2026/CVE-2026-1557.yaml:851abbfff275187cb1d4b0dcdcddc1d52a442aed
@@ -13504,7 +13505,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:3d9ee22bd4679cf3fae03d23a64692b789679ec7
+templates-checksum.txt:36aa9599ae801fb3064f462571b95a29d42efea1
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
