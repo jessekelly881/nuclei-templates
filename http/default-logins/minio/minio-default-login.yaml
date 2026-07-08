@@ -29,31 +29,13 @@ http:
 
         {"accessKey":"{{username}}","secretKey":"{{password}}"}
 
-    payloads:
-      username:
-        - minioadmin
-      password:
-        - minioadmin
-    attack: pitchfork
-
-    matchers-condition: and
-    matchers:
-      - type: status
-        status:
-          - 204
-
-      - type: word
-        part: header
-        words:
-          - "Set-Cookie: token="
-
-  - raw:
       - |
         POST /minio/webrpc HTTP/1.1
         Host: {{Hostname}}
         Content-Type: application/json
 
         {"id":1,"jsonrpc":"2.0","params":{"username":"{{username}}","password":"{{password}}"},"method":"Web.Login"}
+
       - |
         POST /minio/webrpc HTTP/1.1
         Host: {{Hostname}}
@@ -69,20 +51,9 @@ http:
     attack: pitchfork
     stop-at-first-match: true
 
-    matchers-condition: and
     matchers:
-      - type: word
-        words:
-          - "Content-Type: application/json"
-        part: header
-
-      - type: word
-        words:
-          - 'uiVersion'
-          - 'token'
-        part: body
-        condition: and
-
-      - type: status
-        status:
-          - 200
+      - type: dsl
+        dsl:
+          - 'contains_all(body, "uiVersion", "token") && contains(content_type, "application/json") && status_code == 200'
+          - 'contains(header, "Set-Cookie: token=") && status_code == 204'
+        condition: or
