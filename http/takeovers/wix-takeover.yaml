@@ -24,9 +24,7 @@ http:
 
       - type: word
         words:
-          - 'Error ConnectYourDomain occurred'
-          - 'wixErrorPagesApp'
-        condition: and
+          - 'ConnectYourDomain Error | Wix.com'
 
       - type: status
         status:
@@ -34,7 +32,9 @@ http:
 
       - type: dsl
         dsl:
-          - '!contains(host,"wix.com")'
+          - '!contains(host,".wix.com")'
+          - '!contains(host,".wixdns.net")'
+        condition: and
 
     extractors:
       - type: dsl
