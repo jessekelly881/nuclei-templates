@@ -1,0 +1,46 @@
+id: prodigy-panel
+
+info:
+  name: Prodigy Annotation Tool - Unauthenticated Exposure
+  author: rxerium
+  severity: medium
+  description: |
+    Prodigy, by Explosion AI, is a commercial scriptable annotation tool used to label
+    training data for machine learning and NLP models. Its local web server (default
+    port 8080, built on uvicorn/FastAPI) ships with no built-in authentication or user
+    accounts by default and is designed to run on localhost or a trusted network. When
+    exposed to the internet, the annotation UI is directly reachable to any
+    unauthenticated visitor.
+  reference:
+    - https://prodi.gy
+    - https://prodi.gy/docs
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: explosion
+    product: prodigy
+    shodan-query: 'http.title:"Prodigy" http.favicon.hash:-953245195'
+  tags: panel,prodigy,ai,data-annotation,misconfig,exposure,detect,discovery
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/"
+    host-redirects: true
+    max-redirects: 2
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "<title>Prodigy</title>"
+          - 'id="root"'
+          - 'src="bundle.js"'
+        condition: and
+      - type: word
+        part: header
+        words:
+          - "uvicorn"
+      - type: status
+        status:
+          - 200

@@ -1,0 +1,37 @@
+id: vespa-detect
+
+info:
+  name: Vespa - Detect
+  author: rxerium
+  severity: info
+  description: |
+   Vespa was detected. Vespa is an open-source big-data serving engine used for low-latency search, recommendation, and vector/embedding retrieval, and is increasingly deployed as the retrieval backend in AI and RAG (retrieval-augmented generation) pipelines. Exposed config-server or container endpoints can leak application deployment metadata, cluster status, and version information, and may allow unauthenticated access to indexed/vectorized data if the query API is left open.
+  reference:
+    - https://vespa.ai/
+    - https://github.com/vespa-engine/vespa
+    - https://docs.vespa.ai/en/reference/state-v1.html
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: vespa.ai
+    product: vespa
+    shodan-query: 'product:"Vespa"'
+  tags: tech,vespa,ai,vector-db,search,detect,discovery
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/ApplicationStatus"
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - '"vespa"'
+          - '"version"'
+        condition: and
+    extractors:
+      - type: regex
+        part: body
+        group: 1
+        regex:
+          - '"vespa"\s*:\s*\{\s*"version"\s*:\s*"([0-9\.]+)"'

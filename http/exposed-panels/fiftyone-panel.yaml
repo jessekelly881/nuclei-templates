@@ -1,0 +1,43 @@
+id: fiftyone-panel
+
+info:
+  name: FiftyOne Panel - Detect
+  author: rxerium
+  severity: info
+  description: |
+    FiftyOne is an open-source dataset visualization and curation tool for computer
+    vision workflows, built by Voxel51. By default the app ships with no authentication,
+    so any exposed instance directly serves browsable dataset content (images, labels,
+    metadata) and a JSON version endpoint to unauthenticated visitors. This template
+    detects exposed FiftyOne app instances by matching its distinctive page title and
+    meta description, avoiding false positives from similarly-branded but unrelated
+    pages (e.g. other products sharing the same underlying UI shell).
+  reference:
+    - https://github.com/voxel51/fiftyone
+    - https://docs.voxel51.com
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: voxel51
+    product: fiftyone
+    shodan-query: 'http.title:"FiftyOne"'
+  tags: panel,fiftyone,ml,ai,computer-vision,detect,discovery
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    host-redirects: true
+    max-redirects: 2
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "<title>FiftyOne</title>"
+          - "Explore, Analyze, Curate"
+          - 'id="colorModal"'
+        condition: and
+      - type: status
+        status:
+          - 200

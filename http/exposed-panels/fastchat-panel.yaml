@@ -1,0 +1,39 @@
+id: fastchat-panel
+
+info:
+  name: FastChat Panel - Detect
+  author: rxerium
+  severity: info
+  description: |
+    FastChat is an open platform by LMSYS for training, serving, and evaluating
+    large language model based chatbots (used by Vicuna and Chatbot Arena). It
+    ships a Gradio-based web demo ("Chat with Open Large Language Models"). This
+    template detects exposed, unauthenticated FastChat web demo instances.
+  reference:
+    - https://github.com/lm-sys/FastChat
+    - https://github.com/lm-sys/FastChat/blob/main/fastchat/serve/gradio_web_server.py
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: lm-sys
+    product: fastchat
+    shodan-query: 'html:"notice_markdown" html:"Chat with Open Large Language Models"'
+  tags: panel,fastchat,llm,ai,detect,discovery
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    host-redirects: true
+    max-redirects: 2
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "Chat with Open Large Language Models"
+          - "notice_markdown"
+        condition: and
+      - type: status
+        status:
+          - 200

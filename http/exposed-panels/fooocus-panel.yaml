@@ -1,0 +1,40 @@
+id: fooocus-panel
+
+info:
+  name: Fooocus Panel - Detect
+  author: rxerium
+  severity: info
+  description: |
+    Fooocus is an open-source, offline, free Stable Diffusion image-generation UI
+    built on Gradio, focused on simplified prompt-based image generation. This
+    template detects exposed Fooocus web UI instances by matching its
+    Fooocus-branded page metadata together with the embedded Gradio config,
+    to avoid collisions with other Gradio apps (ComfyUI, text-generation-webui,
+    etc.) that commonly share the same port.
+  reference:
+    - https://github.com/lllyasviel/Fooocus
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: lllyasviel
+    product: fooocus
+    shodan-query: 'html:"fooocus"'
+  tags: panel,fooocus,ai,image-generation,gradio,detect,discovery
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    host-redirects: true
+    max-redirects: 2
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - 'og:title" content="Fooocus'
+          - "window.gradio_config"
+        condition: and
+      - type: status
+        status:
+          - 200

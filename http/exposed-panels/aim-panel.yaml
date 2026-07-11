@@ -1,0 +1,39 @@
+id: aim-panel
+
+info:
+  name: Aim Panel - Detect
+  author: rxerium
+  severity: info
+  description: |
+    Aim is an open-source, self-hosted AI/ML experiment tracking tool used to log,
+    query, and visualize machine learning training runs. This template detects
+    exposed Aim server web UI instances by matching its distinctive page title
+    and meta description, avoiding false positives from the generic word "Aim".
+  reference:
+    - https://github.com/aimhubio/aim
+    - https://aimstack.io
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: aimhubio
+    product: aim
+    shodan-query: 'html:"Open-source, self-hosted AI experiment tracking tool"'
+  tags: panel,aim,ml,ai,mlops,detect,discovery
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+    host-redirects: true
+    max-redirects: 2
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "<title>Aim</title>"
+          - "Open-source, self-hosted AI experiment tracking tool"
+        condition: and
+      - type: status
+        status:
+          - 200

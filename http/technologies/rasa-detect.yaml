@@ -1,0 +1,39 @@
+id: rasa-detect
+
+info:
+  name: Rasa Open Source - Detect
+  author: rxerium
+  severity: info
+  description: |
+    Rasa Open Source was detected. Rasa is an open-source conversational AI framework used to build chatbots and voice assistants, exposing a REST server (default port 5005) for intent parsing and webhook-driven conversations. Exposed unauthenticated instances may allow interaction with the assistant's conversation endpoints and disclose internal version and configuration information.
+  reference:
+    - https://github.com/RasaHQ/rasa
+    - https://rasa.com/docs/rasa/
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: rasa
+    product: rasa
+    shodan-query: 'html:"Hello from Rasa"'
+  tags: tech,rasa,ai,chatbot,detect,discovery
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/version"
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - '"minimum_compatible_version"'
+      - type: status
+        status:
+          - 200
+
+    extractors:
+      - type: regex
+        part: body
+        group: 1
+        regex:
+          - '"version"\s*:\s*"([0-9a-zA-Z\.\-]+)"'
