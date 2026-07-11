@@ -21,7 +21,7 @@ info:
     max-request: 1
     vendor: knime
     product: knime_server
-    shodan-query: 'html:"knime"'
+    shodan-query: 'html:"_login/_nuxt"'
   tags: panel,knime,ml,ai,data-science,detect,discovery
 
 http:
@@ -29,7 +29,7 @@ http:
     path:
       - "{{BaseURL}}"
     host-redirects: true
-    max-redirects: 5
+    max-redirects: 2
     matchers-condition: and
     matchers:
       - type: word
