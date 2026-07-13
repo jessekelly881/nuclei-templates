@@ -964,8 +964,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:60c294948163c541a80c62a1edd5b1f2e76d6376
-cves.json:44bc3c7ed6a6848941643130ad443fb0466daacb
-cves.json-checksum.txt:57662553a569854e4de05681a6dc4d707187fbaa
+cves.json:1445c2bf1321d50af3f354d22869ee32727a8312
+cves.json-checksum.txt:09e2ae98cbe85f58366c4098a022d6669597abc2
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -6150,6 +6150,7 @@ http/cves/2026/CVE-2026-50230.yaml:4f5e5d969be5166b52877beb6a5f29fd4f924341
 http/cves/2026/CVE-2026-5027.yaml:e818f17c674bdb8a867cfd7faecaf8d40125ab3b
 http/cves/2026/CVE-2026-5073.yaml:30898b59e0720d7fb7d10db111e4d7dbaceb90d7
 http/cves/2026/CVE-2026-50751.yaml:ceaa8216b4d29695f3314d6794958e829debe92f
+http/cves/2026/CVE-2026-52774.yaml:3bf0693bc558a78abc6aedcd74723eec454f11f7
 http/cves/2026/CVE-2026-52815.yaml:07b5233c0414d600a7e5a81b78dc7e66332dde68
 http/cves/2026/CVE-2026-53787.yaml:951f242fa24c5ffd44cba3b952412657b778e52a
 http/cves/2026/CVE-2026-54066.yaml:4b787615642b4058b50bcb37c4ff37d64318130f
@@ -12262,6 +12263,7 @@ http/vulnerabilities/jolokia/jolokia-file-read-compilerdirectivesadd.yaml:61dd29
 http/vulnerabilities/jolokia/jolokia-heap-info-disclosure.yaml:397af047d97d6db897f9531731e5611c19b73e9f
 http/vulnerabilities/jolokia/jolokia-tomcat-creds-leak.yaml:c35be219e7953dad0e0407facddd39e07a90a641
 http/vulnerabilities/joomla/joomla-com-booking-component.yaml:06082134c29008a2dc87f395b06e5dd201e0f170
+http/vulnerabilities/joomla/joomla-com-fabrik-lfi.yaml:644dd65d62c272317b1ce64ead2d84549babab4a
 http/vulnerabilities/joomla/joomla-department-sqli.yaml:177055cf6a9f35123b6adaa22ac03a1756950f10
 http/vulnerabilities/joomla/joomla-easyshop-lfi.yaml:02dd80ee171ededa4cce557eeec0cc9a01d29e30
 http/vulnerabilities/joomla/joomla-iproperty-real-estate-xss.yaml:dcbdfa8b49d096f12e577777249496181b76bd2a
@@ -12453,7 +12455,6 @@ http/vulnerabilities/other/jeewms-lfi.yaml:e6c8ec704be36e02e3c746ac39d0181a0008a
 http/vulnerabilities/other/jfrog-unauth-build-exposed.yaml:cec774b0ffe0261b681293504e0b5db07286dfd1
 http/vulnerabilities/other/jinfornet-jreport-lfi.yaml:a786767a447800859dfbe099d7858b92910db0bb
 http/vulnerabilities/other/jitsi-meet-log4j-rce.yaml:bf29e64195c1eb1f967e9cef848a2166d9329159
-http/vulnerabilities/other/joomla-com-fabrik-lfi.yaml:69cee0f5e877eef95e6ccc60918bbde7806de183
 http/vulnerabilities/other/joomla-jlex-review-xss.yaml:665ca038deffa296b6c189c6198a83e3e381e302
 http/vulnerabilities/other/joomla-jmarket-xss.yaml:7a854665e5a9111ebf6dbca4a8c8f4d50a648670
 http/vulnerabilities/other/justboil-me-image-upload.yaml:1228f9a081688ee0a8cb0b4dcb5a62be2cf9b425
@@ -13505,7 +13506,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:1ae3e7b3fe5e7277936301e7e35fbf6dbe41cb69
+templates-checksum.txt:0572d73d7c0be0f2616d474c692c25c7c58ac1c0
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
