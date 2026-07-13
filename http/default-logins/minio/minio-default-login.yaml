@@ -1,7 +1,7 @@
 id: minio-default-login
 
 info:
-  name: Minio Default Login
+  name: Minio - Default Login
   author: pikpikcu
   severity: high
   description: Minio default admin credentials were discovered.
