@@ -677,6 +677,7 @@ cloud/kubernetes/security-compliance/k8s-svc-acct-lookup-set.yaml:bbb8df273c8db8
 cloud/kubernetes/security-compliance/k8s-tls-config-set.yaml:5599af50f77d38640529b23a2d2b9f148091def4
 code/cves/2014/CVE-2014-0160.yaml:c37a03e0262594d2b0d7ff27e9697bbd4bb9325b
 code/cves/2016/CVE-2016-8735.yaml:f8f021edf6ef165849356e9874429b8c88e1a09a
+code/cves/2016/CVE-2016-9299.yaml:0b1ffd2dc59ee19eb28bd9691672970ac9c4f339
 code/cves/2017/CVE-2017-1000353.yaml:2dd256fd3af79b1a2390480bd8bc12a30d3efe16
 code/cves/2019/CVE-2019-0604.yaml:b5f61e492887bde754594cd327374e391084e69f
 code/cves/2019/CVE-2019-14287.yaml:5022c86e0c965afb5af7efd5451caa6f82436d6f
@@ -2466,7 +2467,6 @@ http/cves/2016/CVE-2016-7552.yaml:fffacd6d7129632e77b5b9b52ca3e236e463cade
 http/cves/2016/CVE-2016-7834.yaml:d8af4cb386ff9c2b0c62095437f58b7fdb7f111a
 http/cves/2016/CVE-2016-7981.yaml:1eb23218fbe0cc1af4be3400eab4451334e366d9
 http/cves/2016/CVE-2016-8527.yaml:fb0cc93e914a37c400dd6d53a57722d47bd166d5
-http/cves/2016/CVE-2016-9299.yaml:fc42e8b902953b347891c6059af37a51bb86873d
 http/cves/2017/CVE-2017-0929.yaml:dfe1bb4d66e9588e99d4bfad7ed957546cb24d3b
 http/cves/2017/CVE-2017-1000028.yaml:1c33ea95011c5dc800ca64e88548d95bfcdec501
 http/cves/2017/CVE-2017-1000029.yaml:f663d0c272cc6e94e3271c3fe123970b3b81a4fb
@@ -8465,7 +8465,7 @@ http/exposures/logs/wp-wpstatistics-log.yaml:be6845d5dbd27eec617d0dfa7852a72e280
 http/exposures/logs/ws-ftp-log.yaml:34d9e63b05a875f8810dc469e4087ba01b0224a1
 http/exposures/logs/yii-error-page.yaml:fb77bfca50cd9de8d2cdc7ffd2144b1306026b7d
 http/exposures/logs/zen-cart-log-exposure.yaml:ebcfbf7072049e859a441890272659abc80e058a
-http/exposures/logs/zm-system-log-detect.yaml:bb60e4beb6a85fcbc9fd115e69422b7b55c3ddf7
+http/exposures/logs/zoneminder-system-log.yaml:e5f3eef595b0a4d295916ab6e30cf0f586906a27
 http/exposures/tokens/adafruit/adafruit-api-key.yaml:61c774c3afa035756babbc6f620405b50583129d
 http/exposures/tokens/adobe/adobe-client-id.yaml:b7740e7f9d98102fee43b6e8f9143ffae4ee6228
 http/exposures/tokens/adobe/adobe-oauth-secret.yaml:ecaf4b34e48e90df26ea6987416409509502262f
@@ -13506,7 +13506,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:0572d73d7c0be0f2616d474c692c25c7c58ac1c0
+templates-checksum.txt:bd42c9e1f235a200da75e75772602ec0dd124cfe
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
