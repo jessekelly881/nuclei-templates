@@ -1,7 +1,7 @@
-id: bitnami-apache-solr-panel
+id: bitnami-apache-solr
 
 info:
-  name: Bitnami Apache Solr Stack - Panel Detect
+  name: Bitnami Apache Solr Stack - Detection
   author: Th3l0newolf
   severity: info
   description: |
@@ -13,19 +13,19 @@ info:
     max-request: 1
     verified: true
     shodan-query: html:"Bitnami Apache Solr Stack"
-  tags: panel,apache,solr,bitnami,discovery
+  tags: detect,apache,solr,bitnami,discovery,tech
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/"
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 3
 
     matchers:
       - type: dsl
         dsl:
           - 'status_code == 200'
           - 'contains(body, "Bitnami Apache Solr Stack")'
-          - 'contains(body, "Apache Solr is now installed")'
-          - 'contains(body, "Access Apache Solr")'
-          - '(contains(body, "Bitnami Apache Solr Stack") || contains(body, "Apache Solr"))'
         condition: and
