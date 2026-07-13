@@ -1,4 +1,4 @@
-id: kestra-login-panel
+id: kestra-panel
 
 info:
   name: Kestra Login - Panel Detect
@@ -24,10 +24,10 @@ http:
     matchers:
       - type: word
         part: body
-        condition: and
         words:
           - "<title>Kestra</title>"
           - 'window.KESTRA_UI_PATH = "/ui/";'
+        condition: and
 
       - type: status
         status:
