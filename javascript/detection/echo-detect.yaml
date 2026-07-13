@@ -38,3 +38,4 @@ javascript:
           - "success == true"
           - contains(response, "{{randstr}}")
         condition: and
+# digest: 490a00463044022016c5698968a6c5b4956c172589e42798e8721a6c17e0c443348c2337ad68f5f302207c490e49902c961bee00855a40464c62df16e5b5b3e61f2a95a354656c57d934:922c64590222798bb761d5b6d8e72950
