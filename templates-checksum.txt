@@ -7167,6 +7167,7 @@ http/exposed-panels/kenesto-login.yaml:2c04bdb5b58b3c4984edc3d07d2af56e6c368582
 http/exposed-panels/kentico-login.yaml:9546df00573e5ab47479f9efe3f0c72cb4727bae
 http/exposed-panels/kerio-connect-client.yaml:b1ae3dff9d48e88aeee3060cdb6f9ae8b97e07fc
 http/exposed-panels/kerion-control-panel.yaml:552ffd74ac51a5833108d908dd5c88ad9c4cd04c
+http/exposed-panels/kestra-panel.yaml:8dff45f0b4dc8f6cba7395bfb03d7d1960a51547
 http/exposed-panels/kettle-panel.yaml:9030a80da35e1ebc71d58309f6700d39c2844768
 http/exposed-panels/keycloak-admin-panel.yaml:1628bfe67713a3b3a4501086e9dad6971d94b314
 http/exposed-panels/kfm/kaes-file-manager.yaml:7c1463d06de013bcc99196947581875a42e37617
@@ -13506,7 +13507,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:43ccce1c0e3146a99c900e4a5199b89510675688
+templates-checksum.txt:fa505b8250abcfeccd57b55c050e7d8fa728787b
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
