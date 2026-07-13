@@ -1,13 +1,11 @@
-id: seaweedfs-filer-panel
+id: seaweedfs-unauth
 
 info:
   name: SeaweedFS Filer - Unauthenticated Access
   author: Th3l0newolf
-  severity: critical
+  severity: high
   description: |
-    SeaweedFS Filer interface is exposed without authentication.
-    Unauthenticated users may be able to upload, modify, or access files,
-    potentially leading to malicious file hosting, data exposure, or remote compromise.
+    SeaweedFS Filer interface is exposed without authentication.Unauthenticated users may be able to upload, modify, or access files, potentially leading to malicious file hosting, data exposure, or remote compromise.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
     cwe-id: CWE-306
@@ -15,12 +13,12 @@ info:
     max-request: 1
     verified: true
     shodan-query: html:"SeaweedFS Filer"
-  tags: panel,seaweedfs,filer,storage,unauth,critical
+  tags: panel,seaweedfs,filer,storage,unauth
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/"
+      - "{{BaseURL}}"
 
     matchers-condition: and
     matchers:
@@ -31,10 +29,10 @@ http:
 
       - type: word
         part: body
-        condition: and
         words:
           - "</span> New Folder"
           - "</span> Upload"
+        condition: and
 
       - type: status
         status:
