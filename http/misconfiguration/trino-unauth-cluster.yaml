@@ -1,7 +1,7 @@
-id: unauth-cluster-trino
+id: trino-unauth-cluster
 
 info:
-  name: Cluster Overview - Unauthenticated Dashboard Exposure
+  name: Trino Cluster Overview - Unauthenticated Dashboard Exposure
   author: tess
   severity: medium
   description: Cluster Overview dashboard is exposed.
