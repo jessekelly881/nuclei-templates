@@ -13076,7 +13076,7 @@ javascript/cves/2025/CVE-2025-46818.yaml:d5e9e23f909d34603aed76c28c8d74f95a4f2df
 javascript/cves/2025/CVE-2025-46819.yaml:e1aa08715e0114326025ce8234d179c9fb85b3c6
 javascript/cves/2025/CVE-2025-49844.yaml:406e2156e5a5b143d8e21a74474d2a68043f333c
 javascript/cves/2026/CVE-2026-0257.yaml:61b88ea5c07f2bdd75fab263b49775bb881c63c9
-javascript/cves/2026/CVE-2026-1731.yaml:95986fd73ec70e8961c4d138f564906b8af8e7c4
+javascript/cves/2026/CVE-2026-1731.yaml:d6ea050926e4bc20388c3ea103fe49d4e4191ebd
 javascript/cves/2026/CVE-2026-33453.yaml:c9d8278143d5bcfb9deff09b2b7824240189db6a
 javascript/cves/2026/CVE-2026-39363.yaml:b6d8f498de1a4f0dbbd4150e260586997fee5bb4
 javascript/cves/2026/CVE-2026-39987.yaml:45c56ff98b8bcff50e4a666c1f88e20d81de6a23
@@ -13510,7 +13510,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:a33a5bc606a6ddc06679da857f8e19fe8a4b6789
+templates-checksum.txt:d2a66ee0785e96d864d9a45e67cbb33c2b3bde53
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
