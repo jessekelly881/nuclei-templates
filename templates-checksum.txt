@@ -7169,7 +7169,7 @@ http/exposed-panels/kerio-connect-client.yaml:b1ae3dff9d48e88aeee3060cdb6f9ae8b9
 http/exposed-panels/kerion-control-panel.yaml:552ffd74ac51a5833108d908dd5c88ad9c4cd04c
 http/exposed-panels/kestra-panel.yaml:8dff45f0b4dc8f6cba7395bfb03d7d1960a51547
 http/exposed-panels/kettle-panel.yaml:9030a80da35e1ebc71d58309f6700d39c2844768
-http/exposed-panels/keycloak-admin-panel.yaml:1628bfe67713a3b3a4501086e9dad6971d94b314
+http/exposed-panels/keycloak-admin-panel.yaml:0135c801cf5a13ded10b564e6410b5a7a4ed9cd3
 http/exposed-panels/kfm/kaes-file-manager.yaml:7c1463d06de013bcc99196947581875a42e37617
 http/exposed-panels/kfm/kfm-login-panel.yaml:64f88811997d64969d3d65de3f3e2529b3163d98
 http/exposed-panels/kiali-panel.yaml:27cacecc96c684df689d3003a91d7a55ac00bf95
@@ -13068,7 +13068,7 @@ javascript/cves/2024/CVE-2024-45519.yaml:eb462da2774f37d82fd6a78916ef1c8b269eaa4
 javascript/cves/2024/CVE-2024-47176.yaml:5c77263a3f0e671edf35995f822ef9aa2c9f5475
 javascript/cves/2025/CVE-2025-12101.yaml:f9b71bb1849e532f2975fef225e0308bd38ef1dc
 javascript/cves/2025/CVE-2025-14847.yaml:c52713dc3045d1bf1058379dcc20a22a92f49804
-javascript/cves/2025/CVE-2025-29635.yaml:5679a1afa42b53af8f35d387679bf79e8c082978
+javascript/cves/2025/CVE-2025-29635.yaml:470d24e47d5d58b6b1551edaf248e8dff6b6b9c6
 javascript/cves/2025/CVE-2025-46817.yaml:e2bcac3698d4e9dc8659dd33910dd87dd47ed4f6
 javascript/cves/2025/CVE-2025-46818.yaml:d5e9e23f909d34603aed76c28c8d74f95a4f2dfb
 javascript/cves/2025/CVE-2025-46819.yaml:e1aa08715e0114326025ce8234d179c9fb85b3c6
@@ -13508,7 +13508,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:1bbda8319f7b19aee88611e3cb519e091ad54597
+templates-checksum.txt:25c51001d9ad5a08b4a0c112d9e3fd106a28498e
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
