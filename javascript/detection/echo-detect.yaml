@@ -1,7 +1,7 @@
 id: echo-detect
 
 info:
-  name: Echo Protocol  Detect
+  name: Echo Protocol - Detect
   author: pussycat0x
   severity: info
   description: |
