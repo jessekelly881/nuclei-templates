@@ -57,3 +57,4 @@ http:
           - 'contains_all(body, "uiVersion", "token") && contains(content_type, "application/json") && status_code == 200'
           - 'contains(header, "Set-Cookie: token=") && status_code == 204'
         condition: or
+# digest: 4b0a00483046022100830840ca8fe6bbf1e4e7eb53c5730117bacaadb66a2af49068f6a4938308f09c022100d073d93c5761dc7d36860fc2471c28c43e6455b609f52228926ea3d0b42aec4a:922c64590222798bb761d5b6d8e72950
