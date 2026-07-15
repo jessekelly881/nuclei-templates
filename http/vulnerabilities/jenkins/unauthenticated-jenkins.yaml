@@ -19,8 +19,10 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        condition: or
         words:
           - Dashboard [Jenkins]
+          - Dashboard - Jenkins
 
       - type: status
         status:
