@@ -2,7 +2,7 @@ id: langfuse-panel
 
 info:
   name: Langfuse Panel - Detect
-  author: ChrisJr404
+  author: ChrisJr404,infosec-asish
   severity: info
   description: |
     Langfuse panel was detected. Langfuse is an open-source LLM engineering platform for observability, evaluations, prompt management and analytics. Exposed instances may reveal LLM prompts, traces, evaluations, and connected API keys.
