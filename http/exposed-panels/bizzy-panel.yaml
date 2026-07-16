@@ -16,7 +16,7 @@ info:
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/aa/logim.htm?_language_=en"
+      - "{{BaseURL}}/aa/login.htm?_language_=en"
 
     host-redirects: true
     max-redirects: 2
