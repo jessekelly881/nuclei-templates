@@ -1,0 +1,29 @@
+id: bizzy-panel
+
+info:
+  name: BIZZY Login - Panel
+  author: Kazgangap
+  severity: info
+  description: |
+    BIZZY login Panel was detected. BIZZY is a vulnerability management platform.
+  classification:
+    cwe-id: CWE-200
+  metadata:
+    max-request: 1
+    verified: true
+  tags: panel,bizzy,login,detect,discovery
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/aa/logim.htm?_language_=en"
+
+    host-redirects: true
+    max-redirects: 2
+    
+    matchers:
+      - type: dsl
+        dsl:
+          - 'contains_all(body, "Login - BIZZY", "username", "password")'
+          - 'status_code == 200'
+        condition: and
