@@ -61,3 +61,4 @@ http:
           - (!regex("(?i)SSH-[.]+-+",body_1)) && (!regex("(?i)SSH-[.]+-+",body_2)) && (regex("(?i)SSH-[.]+-+",body_4)) && (!regex("(?i)<html",body_4))
           - (!regex("(?i)POP3",body_1)) && (!regex("(?i)POP3",body_2)) && (regex("(?i)POP3",body_6)) && (!regex("(?i)<html",body_6))
           - (!regex("(?i)SMTP",body_1)) && (!regex("(?i)SMTP",body_2)) && ((regex("(?i)SMTP",body_5) && !regex("(?i)<html",body_5)) || (regex("(?i)SMTP",body_7) && !regex("(?i)<html",body_7)) || (regex("(?i)SMTP",body_8) && !regex("(?i)<html",body_8)))
+# digest: 4b0a00483046022100969b285018b68ce344467fb127bbf087d1d2ce001fe6d3db966ba33066f221e8022100f7f72cd23e2601c799773880806c38175f32517c150777d0d1c98d772a2fa24f:922c64590222798bb761d5b6d8e72950
