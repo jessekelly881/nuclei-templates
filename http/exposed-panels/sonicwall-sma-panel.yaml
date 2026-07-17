@@ -15,8 +15,8 @@ info:
   metadata:
     verified: true
     max-request: 2
-    shodan-query: 'Server: SMA/'
-    fofa-query: 'server="SMA"'
+    shodan-query: html:“SonicWall SMA”
+    fofa-query: body=“SonicWall SMA”
   tags: sonicwall,sma,ssl-vpn,vpn,tech,detect,login,panel
 
 http:
