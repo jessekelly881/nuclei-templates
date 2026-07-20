@@ -77,3 +77,4 @@ http:
           - "contains(to_lower(header), 'set-cookie: user_session=')"
           - "status_code==302"
         condition: and
+# digest: 4b0a00483046022100e197e5c00cc5d3c17bd31b8766504d472a1cccc67a9e436ea8c66cf2cd32bc5f022100f082b2b61433dc6df779936d28b391c6f38c5f459a72615090680a4a07ba7c6c:922c64590222798bb761d5b6d8e72950
