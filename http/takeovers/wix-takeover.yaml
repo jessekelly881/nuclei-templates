@@ -24,9 +24,7 @@ http:
 
       - type: word
         words:
-          - 'Error ConnectYourDomain occurred'
-          - 'wixErrorPagesApp'
-        condition: and
+          - 'ConnectYourDomain Error | Wix.com'
 
       - type: status
         status:
@@ -34,10 +32,11 @@ http:
 
       - type: dsl
         dsl:
-          - '!contains(host,"wix.com")'
+          - '!contains(host,".wix.com")'
+          - '!contains(host,".wixdns.net")'
+        condition: or
 
     extractors:
       - type: dsl
         dsl:
           - cname
-# digest: 4a0a004730450220329e16c6c351c905921018df5aee0bfcb9263a92f8a13315c476afc9cfaba51f022100ef9ee5f1f58eecc91b7e71dde584655974e68e3552a5eb822e4836118dded290:922c64590222798bb761d5b6d8e72950
