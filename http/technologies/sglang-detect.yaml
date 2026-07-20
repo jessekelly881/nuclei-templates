@@ -31,3 +31,4 @@ http:
           - 'status_code == 200'
           - 'contains_all(body, "\"model_path\"", "\"is_generation\"") || contains(body, "sglang")'
         condition: and
+# digest: 4b0a00483046022100a4117844c376929774e97869ea0fab05239e99ed02194d1a78822f93eafa4c3a022100ba69b483b1d7153d9cea0f811abb347508e552205ed3e656592c585c9e1c4fea:922c64590222798bb761d5b6d8e72950

@@ -33,3 +33,4 @@ http:
           - 'contains(content_type, "application/json")'
           - 'status_code == 200'
         condition: and
+# digest: 4b0a00483046022100c896f32f1ce8a549b704ef8bc397187cde8cec4af51cced645c4040778a589f50221008320962232873af43371f9ef9d3fba3f5778a5327058d42c132f4131f3f8bd2e:922c64590222798bb761d5b6d8e72950
