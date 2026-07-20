@@ -9,14 +9,14 @@ info:
   classification:
     cwe-id: CWE-200
   metadata:
-    max-request: 1
     verified: true
-  tags: panel,bizzy,login,detect,discovery
+    max-request: 1
+  tags: panel,bizzy,login,discovery
 
 http:
   - method: GET
     path:
-      - "{{BaseURL}}/aa/login.htm?_language_=en"
+      - "{{BaseURL}}"
 
     host-redirects: true
     max-redirects: 2
@@ -24,6 +24,6 @@ http:
     matchers:
       - type: dsl
         dsl:
-          - 'contains_all(body, "Login - BIZZY", "username", "password")'
+          - 'contains(to_lower(body), "login - bizzy")'
           - 'status_code == 200'
         condition: and
