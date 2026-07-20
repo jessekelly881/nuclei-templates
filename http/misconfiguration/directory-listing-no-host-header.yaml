@@ -3,7 +3,7 @@ id: directory-listing-no-host-header
 info:
   name: Directory Listing - No Host header
   author: kazet
-  severity: unknown
+  severity: medium
   description: |
     The HTTP server is configured to list files in the root directory when no Host header is provided.
   metadata:
