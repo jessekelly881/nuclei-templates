@@ -50,3 +50,4 @@ http:
           - 'contains(body, "\"success\":true")'
           - 'contains(header, "auth_token=eyJ")'
         condition: and
+# digest: 4a0a00473045022054caaf3e19a24794760a64df458b5fa11774aa46d7df52addb9d664f528fa88b022100cb69e34f59155992894aa17fb240d23260f24dacc09255df8999c9a6d29a7f89:922c64590222798bb761d5b6d8e72950
