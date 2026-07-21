@@ -17,3 +17,4 @@ http/technologies/deskpro-on-default-page.yaml
 http/technologies/huggingface-tei-tgi-detect.yaml
 http/technologies/jan-detect.yaml
 http/technologies/sglang-detect.yaml
+javascript/cves/2026/CVE-2026-15409.yaml
