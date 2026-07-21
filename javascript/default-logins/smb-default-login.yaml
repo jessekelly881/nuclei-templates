@@ -1,7 +1,7 @@
-id: smb-default-creds
+id: smb-default-login
 
 info:
-  name: SMB Default Credential - Bruteforce
+  name: SMB - Default Logins
   author: pussycat0x
   severity: high
   description: |
@@ -12,8 +12,6 @@ info:
     verified: true
     max-request: 9
     shodan-query: "port:445"
-    product: dionaea
-    vendor: dionaea
   tags: js,network,smb,enum,default,bruteforce,discovery
 
 javascript:
