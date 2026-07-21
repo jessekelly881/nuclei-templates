@@ -1,80 +1,93 @@
 id: windows-command-injection
 
 info:
-  name: Windows Command Injection - Generic Fuzz Detection
+  name: Windows Command Injection - Generic Detection
   author: Jaenact
   severity: high
   description: |
-    Replaces query parameter values with command-separator payloads (e.g., ;, |, &, &&)
-    and detects possible OS command execution on Windows targets by matching dir/systeminfo/whoami hints
-    or time-based delays via ping.
-    Note: requires running nuclei with -fuzz and a target URL that includes at least one query parameter.
+    Detected potential OS command injection on Windows targets by replacing query parameter values with command separator payloads and identifying successful command execution through output patterns from `dir`, `whoami`, `systeminfo`, or response time delays induced via `ping`.
+  impact: |
+    Successful exploitation allows arbitrary command execution on the underlying Windows system, leading to full server compromise, data exfiltration, privilege escalation, and denial of service.
+  remediation: |
+    Never pass user-controlled input directly to cmd.exe or PowerShell. Use parameterized APIs or language-native functions instead of system()/exec(). Apply strict allowlist input validation and enforce least-privilege execution contexts for application processes.
   reference:
     - https://owasp.org/www-community/attacks/Command_Injection
     - https://cwe.mitre.org/data/definitions/78.html
     - https://capec.mitre.org/data/definitions/88.html
+    - https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html
   classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+    cvss-score: 9.8
     cwe-id: CWE-78
   metadata:
     verified: true
-    max-request: 1
-  tags: dast,injection,rce,command-injection,windows,intrusive
+    max-request: 14
+  tags: cmdi,dast,rce,windows,fuzz,vuln
 
 http:
-  - method: GET
-    path:
-      - "{{BaseURL}}"
+  - pre-condition:
+      - type: dsl
+        dsl:
+          - 'method == "GET"'
 
     payloads:
-      windows_fuzz:
-        - ';dir'
-        - '|dir'
-        - '&dir'
-        - '&&dir'
-        - '||dir'
-        - ';whoami'
-        - '|whoami'
-        - '&&whoami'
-        - ';systeminfo'
-        - '|systeminfo'
-        - '&&systeminfo'
-        - ';ipconfig'
-        - '|ipconfig'
-        - '&&ipconfig'
-        - ';dir C:\\'
-        - '|dir C:\\'
-        - '&&dir C:\\'
-        - '&ping -n 5 127.0.0.1&'
-        - '&&ping -n 5 127.0.0.1&&'
+      injection:
+        # dir output
+        - "|dir"
+        - "&dir"
+        - "&&dir"
+        - "||dir"
+        - "|dir C:\\"
+        - "&&dir C:\\"
+        # identity
+        - "|whoami"
+        - "&&whoami"
+        # system enumeration
+        - "|systeminfo"
+        - "&&systeminfo"
+        - "|ipconfig"
+        - "&&ipconfig"
+        # time-based
+        - "&ping -n 5 127.0.0.1&"
+        - "&&ping -n 5 127.0.0.1&&"
 
     fuzzing:
       - part: query
         type: replace
-        mode: multiple
+        mode: single
         fuzz:
-          - '{{windows_fuzz}}'
+          - "{{injection}}"
 
     stop-at-first-match: true
     matchers-condition: or
     matchers:
       - type: regex
-        name: windows-dir-output
+        name: dir-output
         part: body
-        # Typical dir output lines
         regex:
-          - '(?m)^\\s*Directory of [A-Z]:\\\\'
-          - '(?m)^\\s*Volume in drive [A-Z]'
+          - '(?mi)Directory of [A-Z]:\\\\'
+          - '(?mi)Volume in drive [A-Z]'
 
       - type: regex
-        name: windows-systeminfo
+        name: systeminfo-output
         part: body
-        # Robust against minor locale/case differences
         regex:
-          - '(?mi)^OS Name:\\s'
-          - '(?mi)^Host Name:\\s'
-          - '(?mi)^Windows IP Configuration'
+          - '(?mi)^OS Name:\s+'
+          - '(?mi)^Host Name:\s+'
+
+      - type: regex
+        name: ipconfig-output
+        part: body
+        regex:
+          - '(?mi)Windows IP Configuration'
+
+      - type: regex
+        name: whoami-output
+        part: body
+        regex:
+          - '(?mi)^[a-z][-a-z0-9]*\\\\[a-z][-a-z0-9]*$'
 
       - type: dsl
-        name: time-based-windows
+        name: time-based
         dsl:
           - 'duration >= 4'
