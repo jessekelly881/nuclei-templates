@@ -1,7 +1,7 @@
 id: chatwoot-login-panel
 
 info:
-  name: Chatwoot Login Panel Detect
+  name: Chatwoot Login Panel - Detect
   author: Th3l0newolf
   severity: info
   description: |
@@ -29,5 +29,5 @@ http:
           - 'status_code == 200'
           - 'contains(body, "Chatwoot")'
           - 'contains(body, "window.chatwootConfig")'
-          - 'contains(body, "\"INSTALLATION_NAME\":\"Chatwoot\"")'
+          - 'contains(body, "\"INSTALLATION_NAME\":\"Chatwoot")'
         condition: and
