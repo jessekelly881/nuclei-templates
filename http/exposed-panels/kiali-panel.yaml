@@ -31,7 +31,7 @@ http:
       - type: dsl
         dsl:
           - 'status_code == 200'
-          - 'contains_any(to_lower(body), "kiali-ui", "<title>kiali", "kiali version")'
+          - 'contains_any(to_lower(body), "kiali-ui", "<title>kiali</title>", "<title>kiali console</title>", "kiali version")'
         condition: and
 
     extractors:
