@@ -8061,6 +8061,7 @@ http/exposures/apis/strapi-page.yaml:8b1f33b0e110c61987ace56dd70fe3e3d0b7a8b3
 http/exposures/apis/swagger-api.yaml:e3e1afe16c6f62690ce0ce97e3c1cef677921908
 http/exposures/apis/tolgee-api.yaml:40a65b89948c0fe1bc77d17a3e7decfe88ee38c4
 http/exposures/apis/traefik-api-enabled.yaml:416ee3d6c4f81ab07c18d9d735b50600f1d8b9e2
+http/exposures/apis/vllm-openai-api-exposed.yaml:427c293b2feb38e4a138fd2ef9390e77ba8e750b
 http/exposures/apis/wadl-api.yaml:c65c3b63e77c7f7865f8d552479706a353f660c7
 http/exposures/apis/weglot-api-key-exposure.yaml:d874fe2f7f02f112b006912ff924be7af7fe37cd
 http/exposures/apis/wsdl-api.yaml:e019786e95844e2bdff58594b482bec172dbc051
@@ -13568,7 +13569,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:2929c404ba6d2f1955d668db36131674a3178931
+templates-checksum.txt:2b6b52821fc84d05323c400830cb236a2720cf76
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
