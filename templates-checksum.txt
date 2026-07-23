@@ -986,6 +986,8 @@ dast/vulnerabilities/crlf/cookie-injection.yaml:c2925142db4ac404ddb67d7aed456296
 dast/vulnerabilities/crlf/crlf-injection.yaml:1cbcd05ff5918de5e1cd078b5671c39b6f851822
 dast/vulnerabilities/csti/angular-client-side-template-injection.yaml:ef83a92a90a3d441dc1adc22a32232f9453239fd
 dast/vulnerabilities/injection/csv-injection.yaml:d0903c692f264950f2860bbe5c67f5d226061381
+dast/vulnerabilities/injection/unix-command-injection.yaml:a2a7fa5e7296dac30b51c51f7751c1693016ccdc
+dast/vulnerabilities/injection/windows-command-injection.yaml:559f2b87c9c07b1c975c3b6d365da8199cc55363
 dast/vulnerabilities/injection/xinclude-injection.yaml:69bdf188d87ae11ea01b6a36fde0b46c4c7385e5
 dast/vulnerabilities/lfi/lfi-keyed.yaml:b2cad211b36fda25d0c610e3dae667fc44b70e33
 dast/vulnerabilities/lfi/linux-lfi-fuzz.yaml:810f98e3eb4ec16c16616b5ee89b62a217c5244c
@@ -3863,6 +3865,7 @@ http/cves/2021/CVE-2021-46419.yaml:2726bc4975b678257ba594e0b61af3120e52bb7f
 http/cves/2021/CVE-2021-46422.yaml:b88a8e4bc798de4bbfd7f3a8399c3bd0882955c1
 http/cves/2021/CVE-2021-46424.yaml:a5791e2becacac8f0e8c34607e972a4155bcc249
 http/cves/2021/CVE-2021-46704.yaml:a2ece93019df8e787e430a4efe4578dcfc07b766
+http/cves/2021/CVE-2021-47795.yaml:bc13d83a7ddc720c5eb64cc5c884c5571cb197d2
 http/cves/2022/CVE-2022-0087.yaml:28162e92293380b1abeb8f780704f674e401e580
 http/cves/2022/CVE-2022-0140.yaml:1110c56556c4686b7d76337caa86e336189e31a5
 http/cves/2022/CVE-2022-0147.yaml:cc182e20eae6a3ba1a912ebe179f27fe42b2b531
@@ -12243,7 +12246,6 @@ http/vulnerabilities/generic/top-xss-params.yaml:baa19e28e5e2201c862c452ad2eff2c
 http/vulnerabilities/generic/xmlrpc-pingback-ssrf.yaml:d5372656b12a097267f1db786f8fec16c0fbae1a
 http/vulnerabilities/generic/xss-fuzz.yaml:671c6f0bd6fafeb73077b00609234b9060ddbe49
 http/vulnerabilities/generic/xss-uri-reflected.yaml:6115a3ef6005632a29f7e278c2d27501f84bdeee
-http/vulnerabilities/geovision-geowebserver-lfi-xss.yaml:ddcb47e9050c9224c49d4a370a632727df8f9aee
 http/vulnerabilities/gitea/gitea-open-redirect-bypass.yaml:764f2f4eabfa5d20578d2c4d6baf83d6bb230084
 http/vulnerabilities/gitea/gitea-rce.yaml:99981c6da2ae8087513016b7746409e3500492b7
 http/vulnerabilities/gitlab/gitlab-rce.yaml:7627fb06523b09a55a3b182632ab08e10df44912
@@ -13546,7 +13548,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:a20096e65e41a9927b8e34d73bb6db36bd325e1b
+templates-checksum.txt:533d74c8550545e033c3e70eb4793c23682af11a
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
