@@ -965,8 +965,8 @@ code/windows/enumeration/unquoted-service-paths.yaml:2663d300b15940f45ad54d0e731
 code/windows/enumeration/weak-service-binary-permissions.yaml:8780198c798f69ccf2a8ae801d53f558f1909e8c
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:c6a56a25fa16673e0e961f0001be99bdbb6d49b5
-cves.json:654776b0e1417346c84c617aacb37e5bcf02156a
-cves.json-checksum.txt:6d60e2057ab8bc70599c9a932190765bac309a2a
+cves.json:49cd199bd30d36207e80ee132b43e4b38f55a777
+cves.json-checksum.txt:e9183d0da6ef4e9400179c977da8262de6462865
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -4911,7 +4911,7 @@ http/cves/2023/CVE-2023-50578.yaml:012d942c103be3db778612f096054cb7102db393
 http/cves/2023/CVE-2023-50719.yaml:14f24df3150a79e7953bc1924c4aa81716d7b6e1
 http/cves/2023/CVE-2023-50720.yaml:f47271586f08f6b36aacdd4adb662efc80332e73
 http/cves/2023/CVE-2023-5074.yaml:8ac27f43bde9a063608262b90570d5f641c416b7
-http/cves/2023/CVE-2023-50839.yaml:73598ea2750656986bc1c9fd684d9ecfb5d8d76e
+http/cves/2023/CVE-2023-50839.yaml:8c192d66f81304cbe4f04b371b367f32f020a179
 http/cves/2023/CVE-2023-5089.yaml:d74860551c500bc449f7cd424162088d3818cbe8
 http/cves/2023/CVE-2023-50917.yaml:124a73c151318049b6bcacb30fa7ffa4ef786790
 http/cves/2023/CVE-2023-50968.yaml:1de662560d661167a2721a5a6b907dc8d81dd3d5
@@ -13094,6 +13094,7 @@ javascript/cves/2020/CVE-2020-14644.yaml:d79e7a84b1658bf1d7e16bc2e40c802d1b55021
 javascript/cves/2020/CVE-2020-2883.yaml:df3f7539a4e7e567449ab8852105d6cfb3da0f8a
 javascript/cves/2020/CVE-2020-4429.yaml:3ce2c0c2affda0bf94a8a767fad2b27a728a8581
 javascript/cves/2020/CVE-2020-7247.yaml:0aa4bc7bcdc8b9e173b23339984e31449eb9b36f
+javascript/cves/2021/CVE-2021-27877.yaml:15c8ed3a16f44f0e38c2cf60cfc2ba56a4344caa
 javascript/cves/2021/CVE-2021-35211.yaml:8a2fa944caf820f617cb5941b92d92172115f15f
 javascript/cves/2021/CVE-2021-35394.yaml:5693d9adcba0828cbde4a5f0746bc9dcac15fe2c
 javascript/cves/2021/CVE-2021-36754.yaml:d6b371f532533b3ff9a8a205458e587e30c86f24
@@ -13120,7 +13121,7 @@ javascript/cves/2026/CVE-2026-39987.yaml:6a6f70c475d600d8b43d38b975d11cfe1814101
 javascript/cves/2026/CVE-2026-44578.yaml:f6b571bbee3132bda0624c20bb342eaad5eeb32b
 javascript/cves/2026/CVE-2026-4480.yaml:e61c93ffe7f0909559a2c240f437c19b99134333
 javascript/cves/2026/CVE-2026-48908.yaml:8400271cc724d62fb58157612cf4fe03962a2b77
-javascript/cves/2026/CVE-2026-48909.yaml:c8caeed9d18b1a8f7326f36aea99062167eab0f9
+javascript/cves/2026/CVE-2026-48909.yaml:4e7ab0ea4c464ce1ee5af9bb3cb350eb4f3216c1
 javascript/default-logins/ldap-default-login.yaml:98257cb35a83b0c0d4c92a24286e56f3a076f6e9
 javascript/default-logins/mssql-default-logins.yaml:3d92a4848660cb5fa49d1767ba5947afc77c1ce3
 javascript/default-logins/mysql-default-login.yaml:0390683ba4a7b45b9d091bf73984ba9a38c49cdc
@@ -13253,7 +13254,6 @@ network/cves/2020/CVE-2020-1938.yaml:5cd22548c8527b0405d80385eb922e06a9e6063a
 network/cves/2020/CVE-2020-35359.yaml:3517efa865cdfd272d056a9c6fc087cc210b9b93
 network/cves/2020/CVE-2020-9274.yaml:9fea01f7a1db0b8307c6deee391a53a5b367b079
 network/cves/2020/CVE-2020-9365.yaml:f19fc6279c96984e68560fef0f9aaa0fe42f33a1
-network/cves/2021/CVE-2021-27877.yaml:064e4b38827a0cbe31e6d04b41665af33154d9a4
 network/cves/2021/CVE-2021-30047.yaml:f2796f756711aa0eed52f28ac8d1b3abb1a7acd8
 network/cves/2021/CVE-2021-3122.yaml:d2257831db14a19666b3a43f2722cf33e9195ae6
 network/cves/2021/CVE-2021-40524.yaml:f865f2659bc44f8e39878a1aa3cf95c48fd006d1
@@ -13549,7 +13549,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:dd55b01fde665a606a4f2bf8c1a78501ac562ce6
+templates-checksum.txt:1101e258f582f1236797138ae853732cee7c2ba4
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
