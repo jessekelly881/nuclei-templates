@@ -78,3 +78,4 @@ http:
         name: time-based
         dsl:
           - 'duration >= 4'
+# digest: 4a0a00473045022100aaf8abfa73f46e605b0bac69b67368f62a6178fc4bb7f5979592dbb8e6edcefc02201ee998c07753af257794d98725fd3fe4fce9f6280770ae5a9bbb52f19fbcc23a:922c64590222798bb761d5b6d8e72950
