@@ -6544,6 +6544,7 @@ http/exposed-panels/aerohive-netconfig-ui.yaml:d37ac7cbfbd7bd7cafcef4f2f813d38d9
 http/exposed-panels/aethra-panel.yaml:3294403a90ef799947e26b33911d1c550a0175cc
 http/exposed-panels/afterlogic-webmail-login.yaml:bdfa83c6d4375be3d03de7f8980be6de3d7bb5ed
 http/exposed-panels/agentgpt-panel.yaml:ac1f8163b60f09e50bdb2d76db6c798630d5d01f
+http/exposed-panels/aim-panel.yaml:cd2c2814cb84835197bdca575133d3103e75783a
 http/exposed-panels/airbyte-panel.yaml:9e77a40c973e941698b11b7a6746c1bbda6ccc22
 http/exposed-panels/aircube-dashboard-panel.yaml:1fa94f59506e05cb117a08856ca106a91fc55200
 http/exposed-panels/aircube-login.yaml:dd4def3e89bdd30423be2335c3ba6d550007a8bb
@@ -6796,6 +6797,7 @@ http/exposed-panels/commvault-panel.yaml:74471ef86724c26d766a66d760d8d3835ab413f
 http/exposed-panels/compal-panel.yaml:30706513cb414e3848f0695713c7eed7d179fe8a
 http/exposed-panels/compalex-panel-detect.yaml:ad7d7ffc2bfc5aec5a4907ad48532d781c02cd31
 http/exposed-panels/completeview-web-panel.yaml:e3ba31fb3e8406d7c55d3e56ac4d3834431d38c9
+http/exposed-panels/compreface-panel.yaml:26913fa9ee552f66f01c842792bada287ce90ba7
 http/exposed-panels/concourse-ci-panel.yaml:f7f97a32239a53d4729f08ee8ed3ebfeb29bad66
 http/exposed-panels/concrete5/concrete5-panel.yaml:f97413f030c43302140bba3af88188421ba3f018
 http/exposed-panels/connect-box-login.yaml:8e6b5e1df8a5a666c5a5ad98b13e753c3e0fd483
@@ -6847,6 +6849,7 @@ http/exposed-panels/dbt-docs-panel.yaml:936494fa824ba81675c65f32585a5f483d0e98d3
 http/exposed-panels/ddwrt-panel.yaml:e73988b7d34c69589d33f65f9df66c00f3179ba9
 http/exposed-panels/deep-sea-electronics-dse855-detect.yaml:78c086f2c9b994b556c9b2426d28e7d35d850031
 http/exposed-panels/deepmail-panel.yaml:1933d1441287fae49f5dacf962861e014a2583d5
+http/exposed-panels/deepstack-panel.yaml:8175a9361545baff0495e40447c0ce0984b060c9
 http/exposed-panels/defectdojo-panel.yaml:8f0ba9dabb60c102bb18cd05cac68b5fd0e74d68
 http/exposed-panels/dell-bmc-panel-detect.yaml:1457734926e069c708bb5f85a2ae013b5ed4f641
 http/exposed-panels/dell-idrac.yaml:5eb15b42dac93959d9aedd05656d086cb9d0ff8e
@@ -6857,6 +6860,7 @@ http/exposed-panels/delta-login-panel.yaml:dbfa7b5d36bf510089d9fc64784209a23ed70
 http/exposed-panels/deluge-webui-panel.yaml:452285da64efd5ffc25805ee4cf2e9419f4be80d
 http/exposed-panels/dependency-track-panel.yaml:2baa8b7d880429b125bbacaeee0cbda0fc261e6d
 http/exposed-panels/dericam-login.yaml:0c5e248203e3b8df2f98977dd0e81ad35cbd2ec4
+http/exposed-panels/determined-ai-panel.yaml:d277c957008b42d022d86fe61e850bdf7641d55b
 http/exposed-panels/device42-panel.yaml:efa0e365e192a1d192039109a8b4c85be1e0242e
 http/exposed-panels/devtron-panel.yaml:dc27c91ef2d14d7591463df5e8f3c57a855422de
 http/exposed-panels/dex-panel.yaml:40e98d1bf6cb8a223e49cbc9eba41e7783358fb6
@@ -6948,6 +6952,7 @@ http/exposed-panels/facefusion-panel.yaml:f4220f847c314709339c4ba1b41e0993e7695c
 http/exposed-panels/falcosidekick-panel.yaml:7b31882d5c2e1267d4b41f8dc02c65cd7fdd655f
 http/exposed-panels/faraday-login.yaml:23053fb3fa71366de06810cf7c011a4454a0ae9f
 http/exposed-panels/fastapi-docs.yaml:548e461c867f43276e135572efc74c4e9864aa5f
+http/exposed-panels/fastchat-panel.yaml:db398d6fb84c48042fda245b6e0bd3330a52b61f
 http/exposed-panels/fastgpt-panel.yaml:052104a6ae8038d15bf867ce478d4308aa67f110
 http/exposed-panels/fastmile-5g-gateway-panel.yaml:6c15c3ecd4a82ff11540d6fa8048cf81c4cfca56
 http/exposed-panels/fastpanel-hosting-control-panel.yaml:9503742434e78f513a8949d42bacdf3bf202ba91
@@ -6956,6 +6961,7 @@ http/exposed-panels/fatpipe-mpvpn-panel.yaml:fa1e4f91c0dc116667a360ed67393eb737e
 http/exposed-panels/fatpipe-warp-panel.yaml:ee1a50c46f03ee624887825dc7b75adeab3dd24b
 http/exposed-panels/featherpanel-panel.yaml:9aa8efeb01691817723b02aab289d3b63f887f24
 http/exposed-panels/femtocell-panel.yaml:6bd4f9beb9ef6d7a66a28df8641f35883fd619d1
+http/exposed-panels/fiftyone-panel.yaml:627a833421e3417b2e00697d62aef65e83f6be1f
 http/exposed-panels/filebrowser-login-panel.yaml:2aee07390935e40e934c3b84e5462f219b9921cf
 http/exposed-panels/filecatalyst-panel.yaml:1d0694cdb6b6aea7ba3f9c96cd2044a6715808f6
 http/exposed-panels/filegator-panel.yaml:13d5b64b3e03baf69b409325756f3eed0d8f0dde
@@ -6971,6 +6977,7 @@ http/exposed-panels/flip-cms-panel.yaml:1c22996730478df0c01a5dd1bd065394b5f8fce4
 http/exposed-panels/flowci-panel.yaml:b435c879e6d84de32be7127d0bb3d1ece9b10dd6
 http/exposed-panels/flowise-panel.yaml:9c26525ac553ac2d818819269575d3bf78d32c59
 http/exposed-panels/flureedb-admin-console.yaml:5dbf5bea8a295daaab371989326e3d822a9c4096
+http/exposed-panels/fooocus-panel.yaml:406dcb1a74d38e96c6836e4efa4a7c2ecfcab363
 http/exposed-panels/footprints-panel.yaml:62ee04118c9d787f50214517cef5dd8126d0abfc
 http/exposed-panels/forcepoint-applicance.yaml:4759874306ee708b44ac9229d5e3a7e2e4242ea1
 http/exposed-panels/forcepoint-panel.yaml:d186daef34c355232408126117efcfeaa07f8353
@@ -7056,6 +7063,7 @@ http/exposed-panels/growatt-shinelink-panel.yaml:a5fa50d0eb6f8a9aa97a784f379f974
 http/exposed-panels/gryphon-login.yaml:b5417177d93205484de3e0dcdaa651926a87d5b7
 http/exposed-panels/gyra-master-admin.yaml:5d45d9edd7747c951b6db50214e3d71c66d5ea35
 http/exposed-panels/h2console-panel.yaml:4f6e9baa3a36182b1e109f90ba4fee7d5b4c0617
+http/exposed-panels/h2o-driverless-ai-panel.yaml:484ca481620c7cbb3271d32992e5bec71591b63c
 http/exposed-panels/h2o-wave-panel.yaml:5aa5118ab95b73a76ee132997043aab974b79277
 http/exposed-panels/hadoop-exposure.yaml:db5231c4193f8842a058917b4c5ed6b39cf99922
 http/exposed-panels/haivision-gateway-panel.yaml:e83978ba737fbe84018118d47ab097bc14ab493c
@@ -7067,6 +7075,7 @@ http/exposed-panels/hashicorp-consul-agent.yaml:03eec8b3845da76b57f9bf742ae2f098
 http/exposed-panels/hashicorp-consul-webgui.yaml:3a8a6742ca7db9ad4ab661f228fda7ea60ce63d5
 http/exposed-panels/headlamp-panel.yaml:bc73595cf514b554b1c03b9e3006d7423d53fa5b
 http/exposed-panels/headscale-panel.yaml:5f94e8def1ffc4ffaa0c67190d53cec0152e6fef
+http/exposed-panels/helicone-panel.yaml:9e9b243edb3714ca906465ae06d2fa9e338f79a6
 http/exposed-panels/hestia-panel.yaml:d581137e2d498edc9f0c76fdaa5ee89f8e6a594f
 http/exposed-panels/highmail-admin-panel.yaml:a3aef54039595f759f8efecd6e5ba53a6d3fe31e
 http/exposed-panels/hillstone-ssl-vpn-panel.yaml:60a8736778a203571d8a6e79449232ca4d137f08
@@ -7210,6 +7219,7 @@ http/exposed-panels/kiwitcms-login.yaml:5060efdac3ca43d08f058a267106e8fd55ab2854
 http/exposed-panels/kkfileview-panel.yaml:9b5f790875632bbfdddc137e47838daf028d4668
 http/exposed-panels/klog-server-panel.yaml:4944793033fd3c9e28df74be06e57a231ebe0544
 http/exposed-panels/klr300n-panel.yaml:6d62312f085db13ffc55d351c95d68df9fba5adc
+http/exposed-panels/knime-server-panel.yaml:d68d58c6d559e1841b2c6a0829f8210492df1750
 http/exposed-panels/koboldai-panel.yaml:043effc81b4051ceed6a2522f7093977793f4f50
 http/exposed-panels/kodak-network-panel.yaml:944b407f7e107efb39ca5054b1658481c341a648
 http/exposed-panels/koel-panel.yaml:23a2cede5a8b087ee19c3b506dbc6f203a060ca9
@@ -7218,6 +7228,7 @@ http/exposed-panels/konga-panel.yaml:82a1130d94c23e9b9ccecf56ae5d6e5352293794
 http/exposed-panels/kopano-webapp-panel.yaml:0441e092014b774dc052238d794622d9d3ed555a
 http/exposed-panels/kraken-cluster-monitoring.yaml:59627e8d690a96234e0d33058e100caa7efce235
 http/exposed-panels/kronos-workforce-central.yaml:07b07ee998360b878c733a0ed636fb58d30096ce
+http/exposed-panels/kubeflow-katib-panel.yaml:eabd8828644d2c80ab3f5c9289b89130e6a2de40
 http/exposed-panels/kubeflow-pipelines-panel.yaml:0590d259774c4b7c78d4ba97752ffc92033e5932
 http/exposed-panels/kubernetes-dashboard.yaml:e5e65b5359938bf6c75ad04a99329057df891635
 http/exposed-panels/kubernetes-enterprise-manager.yaml:0e2fc4844f5d6e3412226d55af0ba53952cbd91c
@@ -7232,6 +7243,7 @@ http/exposed-panels/lancom-router-panel.yaml:525328dfa4a28868d808b11680ef418cf17
 http/exposed-panels/landrayoa-panel.yaml:a49176ed9da523b79a3d538a0d2103598f875d1f
 http/exposed-panels/langfuse-panel.yaml:23633cca0a0fcccf5be4664c910e25be64bbb59c
 http/exposed-panels/langsmith-panel.yaml:7718927cee202c16ffa1a87f81e3732bf7f70006
+http/exposed-panels/langtrace-panel.yaml:471712202ce84d3326bb0e29011c3b6732700a2d
 http/exposed-panels/lansweeper-login.yaml:3b1b09ba4d8d502174d15669a22eaa24e40e7304
 http/exposed-panels/lantronix-webmanager-panel.yaml:f908524e4ad540d6f74563bdff773f4c68afab2b
 http/exposed-panels/laravel-filemanager.yaml:2e1e3925633143a1ca72586b537452f247371f6f
@@ -7541,6 +7553,7 @@ http/exposed-panels/privategpt-detect.yaml:e8ec0812bcb2fe2a3907ae1f77f2d70e9699d
 http/exposed-panels/privx-panel.yaml:8003fbfbe62df1bd6e2402bbf067b4ec60c9d87f
 http/exposed-panels/processwire-login.yaml:27bb622c9acd678881659d6f5e5f1f404ffb6c0b
 http/exposed-panels/procore-panel.yaml:916f9441df1d5e3388bdd375d58f916b37418f18
+http/exposed-panels/prodigy-panel.yaml:97f7347ce0afd138134af54bf87e4447da701c22
 http/exposed-panels/project-insight-login.yaml:48c4e7fa34ef2197adf6052191ee085e17ba244a
 http/exposed-panels/projectsend-login.yaml:dda0f6ab5c2f3fdabf71c150214bac2afceb9cbc
 http/exposed-panels/prometheus-exposed-panel.yaml:2714d17ad00c97fbb2578c9abbf5c3b400d7e70b
@@ -7882,6 +7895,7 @@ http/exposed-panels/veeam-backup-gcp.yaml:e71ad3da9a99135cbed3b8ad06ace3720ef26c
 http/exposed-panels/veeam-backup-manager-login.yaml:5c9225278682727b49d611f98330317a46e99b26
 http/exposed-panels/veeam-panel.yaml:05898abf0a274c9b376ab1f3cc0fa2435a045775
 http/exposed-panels/veracore-panel.yaml:b7c853f638686fcac3df2a6ac98faf27fa7798b9
+http/exposed-panels/verba-panel.yaml:2a75267bc8a8ce1383c9a265a1aa20cec68039ca
 http/exposed-panels/veritas-netbackup-panel.yaml:76ac9915483592ab831779d64a02063171f8daf1
 http/exposed-panels/veriz0wn-osint.yaml:424e38f007ff349dfc52c35a66a549aed3ddccbb
 http/exposed-panels/verizon-router-panel.yaml:852eb3dc9358dec8a99282866529461945fa5a28
@@ -11509,6 +11523,7 @@ http/technologies/puppet-node-manager-detect.yaml:22769110c15ddad01446242ef5ff1c
 http/technologies/puppetdb-detect.yaml:7ed2c24d25cf2ab5018369dccdbfdb0340e2ec33
 http/technologies/puppetserver-detect.yaml:ef3659a9c6628563a4fa4d5a008bc7552e7a168c
 http/technologies/pypiserver-detect.yaml:56179a03d1861bf63bed481915957442c0fdc652
+http/technologies/rasa-detect.yaml:7b9c45f2240c52446ca829af5e6396399d8712a4
 http/technologies/raygun-rum-detect.yaml:c0cf55fbe08e31c2ce104e0e54103bde7ad3fa24
 http/technologies/redcap-detector.yaml:53fb31f6ae4e21b6e46d8d54b4ebb930fc5e23d1
 http/technologies/redmine-cli-detect.yaml:fb97a3f100792ad5ead5d23f6f15e3a940d53c23
@@ -11536,6 +11551,7 @@ http/technologies/sdwebui-detect.yaml:9d154be5b27205fad9811c5fbfa2133b7de44b92
 http/technologies/searxng-detect.yaml:6c92584b95d878ad8553a7397881bbda463c8cf4
 http/technologies/secui-waf-detect.yaml:8dda0407d2102fe73042b3e433d11341ec50be80
 http/technologies/sekolahku-cms-detect.yaml:235a9ae0f98bd3cc60f5cc34bccd6e02231cf6db
+http/technologies/seldon-core-detect.yaml:c27194296500282aa21c41c4e0b05be53b06d5e6
 http/technologies/semantic-ui-detect.yaml:0463dce95166130862d27d696578bd6fd0ac2f23
 http/technologies/sglang-detect.yaml:682f8876c40b972fb46643ecca2d98857980adcb
 http/technologies/sharefile-storage-server.yaml:bcdfd951cd373e3466ca046ee947be0b08b480aa
@@ -11606,6 +11622,7 @@ http/technologies/versa/versa-director-api.yaml:2a38368fc7af2d23f858ceb8d335022a
 http/technologies/versa/versa-networks-detect.yaml:5468a2d5f97fd46660658d5cebe9e784e9ad8a83
 http/technologies/versa-flexvnf-server.yaml:eb25c4d914c8ee68eba13a52af6a803a6dcc9028
 http/technologies/vertigis-detect.yaml:d99fc1c9173a3d2e5ed60fecc573dd2d6f763d72
+http/technologies/vespa-detect.yaml:f3a2c4bde420bf09ba575c28e85ed58464662d6f
 http/technologies/vivotex-web-console-detect.yaml:55f987855cad570d1662fb6454da10741d95f005
 http/technologies/vmware/vmware-detect.yaml:9c329f0d1f8459ddeaee75854500f12d51be4701
 http/technologies/vmware/vmware-horizon-version.yaml:234da2ab44bce80ce39d616b845e81a135a91915
@@ -13549,7 +13566,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:b5fe5e6b482c9a5ef95b26b8cb804e5df39da2e7
+templates-checksum.txt:df1924ed823d9fac2421c3076aa095ec6357e964
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
