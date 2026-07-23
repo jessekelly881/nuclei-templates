@@ -1,0 +1,37 @@
+id: compreface-panel
+
+info:
+  name: CompreFace Panel - Detect
+  author: rxerium
+  severity: info
+  description: |
+    CompreFace, an open-source face recognition platform by Exadel that provides face detection, recognition, and verification services through a web UI and REST API, was detected. The exposed login/panel instance was identified, which by default requires no authentication to reach the initial UI.
+  reference:
+    - https://github.com/exadel-inc/CompreFace
+    - https://exadel.com/compreface/
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: exadel
+    product: compreface
+    shodan-query: 'http.title:"CompreFace"'
+  tags: panel,compreface,ai,computer-vision,face-recognition,detect,discovery
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "<title>CompreFace</title>"
+
+      - type: status
+        status:
+          - 200
