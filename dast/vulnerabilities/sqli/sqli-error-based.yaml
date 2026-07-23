@@ -496,3 +496,4 @@ http:
           - "SQ200: No table "
           - "Virtuoso S0002 Error"
           - "\\[(Virtuoso Driver|Virtuoso iODBC Driver)\\]\\[Virtuoso Server\\]"
+# digest: 490a0046304402203b78ac14e95e093aefc54c75fa3c45dac4ca8d53321cb0ef0acb4a192b20bc5b022073b5756321b1068422407dc89f903b3bb28338eea1fd337787159d281cf918a6:922c64590222798bb761d5b6d8e72950

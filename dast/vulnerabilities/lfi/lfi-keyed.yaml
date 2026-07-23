@@ -125,3 +125,4 @@ http:
         part: body
         regex:
           - '(<system.webServer[\s\S]+<\/system.webServer>)'
+# digest: 4a0a00473045022100b917be210562f0d09609a7c90cff98a2e93db64f5c6efae6e3c934d0cd6f611902205d5ac63faddba6eac5cbf4a36887f1727ea7752005af4ea6332e2c61a0fb4f9f:922c64590222798bb761d5b6d8e72950

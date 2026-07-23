@@ -42,3 +42,4 @@ http:
           - "contains(interactsh_protocol,'http')"
           - "contains(to_lower(interactsh_request), to_lower(prefix))"
         condition: and
+# digest: 490a0046304402206e9a43c0eb45bf65084c74c02cfba255f2302f435e0471a6ef17c773516b94c6022064f60058e22efe4517b5d703454d671a0488337a8e58f3a0575eb434417e93f8:922c64590222798bb761d5b6d8e72950

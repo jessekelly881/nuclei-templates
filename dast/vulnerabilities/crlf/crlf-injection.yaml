@@ -76,3 +76,4 @@ http:
         part: header
         regex:
           - '(?m)^(?:Set-Cookie\s*?:(?:\s*?|.*?;\s*?))(crlfinjection=crlfinjection)(?:\s*?)(?:$|;)'
+# digest: 4b0a00483046022100bca778c35d5fc61dd71c6454594f25f309d049b5681c7bfdcfa41ab4eeed600a022100d2ee23bf8dc026de3b52c0427f4ca3c4ee3ed9ba15cec1f43f81de2833807e3a:922c64590222798bb761d5b6d8e72950
