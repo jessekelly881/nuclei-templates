@@ -13442,7 +13442,7 @@ network/exposures/cisco-smi-exposure.yaml:3bb09f1925bb869203d581bc2fa5d10208e7bd
 network/exposures/exposed-adb.yaml:a18f55aff332cfc44e69ff77fb5d2d365392fc10
 network/exposures/exposed-dockerd.yaml:618298fce328d696a56e8b651fcf5ff9a722ce10
 network/exposures/exposed-redis.yaml:83464101100374ed86d1bedcdbf2828d6a413bce
-network/exposures/exposed-zookeeper.yaml:99c2e65ad2d9f697bc7ab39607d94c0cbb6d8fa4
+network/exposures/exposed-zookeeper.yaml:3f38f81b6a09e47a28e2765e568295ee9ab0cd1d
 network/exposures/openclaw-exposure.yaml:cc2b0074214b69f156641206fa5e69b4ee7c8d39
 network/honeypot/adbhoney-honeypot-cnxn-detect.yaml:4ff83353259ee7b2d5df7c21972f41de6bc1433a
 network/honeypot/adbhoney-honeypot-shell-detect.yaml:80e82b35f802fb3e0b38565ca9a4137dbd6e5343
@@ -13549,7 +13549,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:1101e258f582f1236797138ae853732cee7c2ba4
+templates-checksum.txt:b5fe5e6b482c9a5ef95b26b8cb804e5df39da2e7
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
