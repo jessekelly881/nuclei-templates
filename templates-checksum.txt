@@ -10189,7 +10189,7 @@ http/osint/phishing/truist-phish.yaml:5f89eaf5f73af76a50a67b99c51603615d395362
 http/osint/phishing/tutanota-phish.yaml:cb4a7f877acc79261c06cc26ba66e68df62ad339
 http/osint/phishing/twilio-phish.yaml:733a016ff855ef3a7e6ff46cc61ce74499959b7c
 http/osint/phishing/twitch-phish.yaml:6fe71e8458e71db753a18c7109a4982d17eacbc9
-http/osint/phishing/twitter-phish.yaml:4728b618a3a99efd703f84c0ead4b27b197663da
+http/osint/phishing/twitter-phish.yaml:5c3014fb8cfc7e18d3a67765c878f6f93f580cb7
 http/osint/phishing/typeform-phish.yaml:2e3b7d5c00f73139c9562b1769b48c8cecba8eab
 http/osint/phishing/uber-phish.yaml:cd2e2e13e36b911c0aab128327e6cbd37df83d58
 http/osint/phishing/ubs-phish.yaml:d8b01f1fbd1378b855fb2ffcedc2ba0502e01335
@@ -13546,7 +13546,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:f4e8562f8ff7b549e288fca5fcbcad354378a427
+templates-checksum.txt:a20096e65e41a9927b8e34d73bb6db36bd325e1b
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
 workflows/activemq-workflow.yaml:20eb2f6dea0ca25d1bd556b5a63e5f25686f2376
