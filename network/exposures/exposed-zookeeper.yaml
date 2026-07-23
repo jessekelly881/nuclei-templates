@@ -5,12 +5,7 @@ info:
   author: pdteam,munzzyy
   severity: high
   description: |
-    Apache ZooKeeper was able to be accessed without any required authentication. Since
-    four-letter word commands are disabled by default unless explicitly whitelisted via
-    zookeeper.4lw.commands.whitelist, a plain "envi" check alone can miss instances that
-    are still fully readable. A second request speaks the native ZooKeeper client protocol
-    directly (connect handshake followed by a getChildren call on "/") to confirm read
-    access to the actual znode tree regardless of the whitelist configuration.
+    Apache ZooKeeper was able to be accessed without any required authentication. Since four-letter word commands are disabled by default unless explicitly whitelisted via zookeeper.4lw.commands.whitelist, a plain "envi" check alone can miss instances that are still fully readable. A second request speaks the native ZooKeeper client protocol directly (connect handshake followed by a getChildren call on "/") to confirm read access to the actual znode tree regardless of the whitelist configuration.
   reference:
     - https://zookeeper.apache.org/security.html
     - https://zookeeper.apache.org/doc/r3.5.5/zookeeperAdmin.html#sc_zkCommands
