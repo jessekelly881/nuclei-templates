@@ -35,3 +35,4 @@ http:
           - 'status_code == 200 && contains(to_lower(header), "x-langfuse-")'
           - 'status_code == 200 && contains_all(body, "\"status\":\"OK\"", "\"version\"") && contains(to_lower(header), "application/json")'
         condition: or
+# digest: 4a0a00473045022100ae524554b41c2c4b75bf920a5294245e4a88ee5845b84db5e0beb1de35b11e1f02206a9193a8467ca96fdc2699cf4f94da87eb0ae3aa6fa2be60db418f0366afdf84:922c64590222798bb761d5b6d8e72950
