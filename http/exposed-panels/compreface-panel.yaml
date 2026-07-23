@@ -5,10 +5,7 @@ info:
   author: rxerium
   severity: info
   description: |
-    CompreFace is an open-source face recognition platform by Exadel that provides
-    face detection, recognition, and verification services through a web UI and REST
-    API. This template detects exposed CompreFace login/panel instances, which by
-    default require no authentication to reach the initial UI.
+    CompreFace, an open-source face recognition platform by Exadel that provides face detection, recognition, and verification services through a web UI and REST API, was detected. The exposed login/panel instance was identified, which by default requires no authentication to reach the initial UI.
   reference:
     - https://github.com/exadel-inc/CompreFace
     - https://exadel.com/compreface/
@@ -24,14 +21,17 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     host-redirects: true
     max-redirects: 2
+
     matchers-condition: and
     matchers:
       - type: word
         part: body
         words:
           - "<title>CompreFace</title>"
+
       - type: status
         status:
           - 200

@@ -5,12 +5,7 @@ info:
   author: rxerium
   severity: info
   description: |
-    Fooocus is an open-source, offline, free Stable Diffusion image-generation UI
-    built on Gradio, focused on simplified prompt-based image generation. This
-    template detects exposed Fooocus web UI instances by matching its
-    Fooocus-branded page metadata together with the embedded Gradio config,
-    to avoid collisions with other Gradio apps (ComfyUI, text-generation-webui,
-    etc.) that commonly share the same port.
+    Fooocus, an open-source, offline Stable Diffusion image-generation UI built on Gradio and focused on simplified prompt-based image generation, was detected by matching its Fooocus-branded page metadata together with the embedded Gradio config, thereby avoiding collisions with other Gradio apps (ComfyUI, text-generation-webui, etc.) that commonly share the same port.
   reference:
     - https://github.com/lllyasviel/Fooocus
   metadata:
@@ -25,8 +20,10 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     host-redirects: true
     max-redirects: 2
+
     matchers-condition: and
     matchers:
       - type: word
@@ -35,6 +32,7 @@ http:
           - 'og:title" content="Fooocus'
           - "window.gradio_config"
         condition: and
+
       - type: status
         status:
           - 200

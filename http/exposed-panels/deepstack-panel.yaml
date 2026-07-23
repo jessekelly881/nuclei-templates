@@ -5,10 +5,7 @@ info:
   author: rxerium
   severity: info
   description: |
-    DeepStack is an open-source, self-hosted computer-vision (AI) server that provides
-    object, face, and scene detection APIs, commonly deployed alongside home-automation
-    stacks such as Home Assistant and Frigate on port 5000. This template detects exposed,
-    unauthenticated DeepStack landing/activation pages.
+    DeepStack, an open-source, self-hosted computer-vision (AI) server that provides object, face, and scene detection APIs, commonly deployed alongside home-automation stacks such as Home Assistant and Frigate on port 5000, was detected. An exposed, unauthenticated DeepStack landing/activation page was identified.
   reference:
     - https://github.com/johnolafenwa/DeepStack
     - https://deepstack.cc
@@ -25,8 +22,10 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     host-redirects: true
     max-redirects: 2
+
     matchers-condition: and
     matchers:
       - type: word
@@ -36,6 +35,7 @@ http:
           - "deepstack.cc"
           - "<title>DeepStack</title>"
         condition: and
+
       - type: status
         status:
           - 200

@@ -5,10 +5,7 @@ info:
   author: rxerium
   severity: info
   description: |
-    Aim is an open-source, self-hosted AI/ML experiment tracking tool used to log,
-    query, and visualize machine learning training runs. This template detects
-    exposed Aim server web UI instances by matching its distinctive page title
-    and meta description, avoiding false positives from the generic word "Aim".
+    Aim, an open-source, self-hosted AI/ML experiment tracking tool used to log, query, and visualize machine learning training runs, was detected by matching its distinctive web UI page title and meta description, thereby minimizing false positives associated with the generic term "Aim".
   reference:
     - https://github.com/aimhubio/aim
     - https://aimstack.io
@@ -24,8 +21,10 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     host-redirects: true
     max-redirects: 2
+
     matchers-condition: and
     matchers:
       - type: word
@@ -34,6 +33,7 @@ http:
           - "<title>Aim</title>"
           - "Open-source, self-hosted AI experiment tracking tool"
         condition: and
+
       - type: status
         status:
           - 200

@@ -5,13 +5,7 @@ info:
   author: rxerium
   severity: info
   description: |
-    KNIME Server (and its successor KNIME Business Hub) is a commercial platform
-    from KNIME AG for deploying, executing, and managing data-science and machine
-    learning workflows built in the KNIME Analytics Platform. It exposes a browser
-    based WebPortal, typically reachable at /knime or /webportal, for running and
-    scheduling workflows and viewing results without the desktop client. This
-    template detects exposed WebPortal login pages, including white-labeled/rebranded
-    deployments, via their underlying static asset paths.
+    KNIME Server (and its successor KNIME Business Hub), a commercial platform from KNIME AG for deploying, executing, and managing data-science and machine learning workflows built in the KNIME Analytics Platform, was detected. An exposed WebPortal login page was identified, including white-labeled/rebranded deployments, via their underlying static asset paths.
   reference:
     - https://www.knime.com/knime-software/knime-server
     - https://www.knime.com/knime-business-hub
@@ -28,8 +22,10 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     host-redirects: true
     max-redirects: 2
+
     matchers-condition: and
     matchers:
       - type: word
@@ -38,6 +34,7 @@ http:
           - "webportal/_nuxt/theme/favicon"
           - "_login/_nuxt"
         condition: and
+
       - type: status
         status:
           - 200

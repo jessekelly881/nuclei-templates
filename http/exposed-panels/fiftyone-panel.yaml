@@ -5,13 +5,7 @@ info:
   author: rxerium
   severity: info
   description: |
-    FiftyOne is an open-source dataset visualization and curation tool for computer
-    vision workflows, built by Voxel51. By default the app ships with no authentication,
-    so any exposed instance directly serves browsable dataset content (images, labels,
-    metadata) and a JSON version endpoint to unauthenticated visitors. This template
-    detects exposed FiftyOne app instances by matching its distinctive page title and
-    meta description, avoiding false positives from similarly-branded but unrelated
-    pages (e.g. other products sharing the same underlying UI shell).
+    FiftyOne, an open-source dataset visualization and curation tool for computer vision workflows built by Voxel51, was detected. The app ships with no authentication by default, so any exposed instance directly served browsable dataset content (images, labels, metadata) to unauthenticated visitors. The instance was identified by matching its distinctive page title, meta description, and UI-specific element IDs.
   reference:
     - https://github.com/voxel51/fiftyone
     - https://docs.voxel51.com
@@ -27,8 +21,10 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     host-redirects: true
     max-redirects: 2
+
     matchers-condition: and
     matchers:
       - type: word
@@ -38,6 +34,7 @@ http:
           - "Explore, Analyze, Curate"
           - 'id="colorModal"'
         condition: and
+
       - type: status
         status:
           - 200

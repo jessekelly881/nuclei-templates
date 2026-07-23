@@ -5,11 +5,7 @@ info:
   author: rxerium
   severity: info
   description: |
-    Determined AI is an open-source deep learning training platform that provides
-    distributed training, hyperparameter tuning, and experiment tracking through a
-    web-based UI and a REST/gRPC-gateway API served by the "master" component. This
-    template detects exposed Determined AI WebUI instances by matching the
-    application title and meta description served at the application root.
+    Determined AI, an open-source deep learning training platform that provides distributed training, hyperparameter tuning, and experiment tracking through a web-based UI and a REST/gRPC-gateway API served by the "master" component, was detected by matching the application title and meta description served at the application root.
   reference:
     - https://github.com/determined-ai/determined
     - https://docs.determined.ai
@@ -25,8 +21,10 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     host-redirects: true
     max-redirects: 2
+
     matchers-condition: and
     matchers:
       - type: word
@@ -35,6 +33,7 @@ http:
           - "Determined Deep Learning Training Platform"
           - "<title>Determined</title>"
         condition: and
+
       - type: status
         status:
           - 200

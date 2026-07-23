@@ -5,10 +5,7 @@ info:
   author: rxerium
   severity: info
   description: |
-    Langtrace is an open-source, OpenTelemetry-based observability platform for LLM
-    applications, providing tracing, monitoring, and analytics for LLM, vector database,
-    and framework calls. This template detects exposed, self-hosted Langtrace dashboard
-    instances, which typically redirect unauthenticated requests to a login page.
+    Langtrace, an open-source, OpenTelemetry-based observability platform for LLM applications that provides tracing, monitoring, and analytics for LLM, vector database, and framework calls, was detected. An exposed, self-hosted Langtrace dashboard instance was identified, which typically redirected unauthenticated requests to a login page.
   reference:
     - https://github.com/Scale3-Labs/langtrace
     - https://langtrace.ai
@@ -24,8 +21,10 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
+
     host-redirects: true
     max-redirects: 2
+
     matchers-condition: and
     matchers:
       - type: word
@@ -34,6 +33,7 @@ http:
           - "<title>Langtrace</title>"
           - "Open source observability for your LLM applications"
         condition: and
+
       - type: status
         status:
           - 200
