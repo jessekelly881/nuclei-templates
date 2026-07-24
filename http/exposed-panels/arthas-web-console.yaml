@@ -1,12 +1,11 @@
 id: arthas-web-console
 
 info:
-  name: Alibaba Arthas Web Console Detect
+  name: Alibaba Arthas Web Console - Detect
   author: wujiecong
   severity: info
   description: |
-    An exposed Alibaba Arthas web console interface was detected.
-    Arthas is a Java diagnostic tool that can expose a web-based console when enabled.
+   Detected Alibaba Arthas web console interface was detected. Arthas is a Java diagnostic tool that can expose a web-based console when enabled.
   reference:
     - https://arthas.aliyun.com/doc/web-console.html
   metadata:
@@ -14,25 +13,18 @@ info:
     max-request: 1
     vendor: alibaba
     product: arthas
-    shodan-query:
-      - title:"Arthas Console"
-      - http.title:"Arthas Console"
-    fofa-query:
-      - title="Arthas Console"
-  tags: panel,arthas,alibaba,web-console,discovery
+    shodan-query: title:"Arthas Console"
+    fofa-query: title="Arthas Console"
+  tags: panel,arthas,alibaba,web-console,detect
 
 http:
   - method: GET
     path:
       - "{{BaseURL}}/"
 
-    matchers-condition: and
     matchers:
-      - type: word
-        part: body
-        words:
-          - "<title>Arthas Console</title>"
-
-      - type: status
-        status:
-          - 200
+      - type: dsl
+        dsl:
+          - 'status_code == 200'
+          - 'contains(body, "<title>Arthas Console</title>")'
+        condition: and
